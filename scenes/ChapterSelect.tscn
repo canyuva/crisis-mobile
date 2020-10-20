@@ -1,0 +1,417 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://assets/scripts/ChapterSelect.gd" type="Script" id=1]
+[ext_resource path="res://assets/images/misc/selectchapter.png" type="Texture" id=2]
+[ext_resource path="res://assets/images/icons/rightarrow.png" type="Texture" id=3]
+[ext_resource path="res://assets/images/icons/leftarrow.png" type="Texture" id=4]
+[ext_resource path="res://assets/images/chapter_images/chaptertemp.png" type="Texture" id=5]
+[ext_resource path="res://assets/images/buttons/button1.png" type="Texture" id=6]
+[ext_resource path="res://assets/images/misc/line1.png" type="Texture" id=7]
+
+[sub_resource type="Animation" id=1]
+
+resource_name = "ChapterAnimLeft"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Chapter2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 800, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Chapter1:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -800, 0 ), Vector2( 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Chapter3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 800, 0 ), Vector2( 1600, 0 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+
+resource_name = "ChapterAnimRight"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Chapter2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -800, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Chapter1:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -800, 0 ), Vector2( -1600, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Chapter3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 800, 0 ), Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="DynamicFontData" id=3]
+
+hinting = 2
+font_path = "res://assets/fonts/Rationale-Regular.ttf"
+_sections_unfolded = [ "Resource" ]
+
+[sub_resource type="DynamicFont" id=4]
+
+size = 80
+use_mipmaps = false
+use_filter = false
+font_data = SubResource( 3 )
+_sections_unfolded = [ "Extra Spacing", "Font", "Resource", "Settings" ]
+
+[sub_resource type="DynamicFont" id=5]
+
+size = 40
+use_mipmaps = false
+use_filter = false
+font_data = SubResource( 3 )
+_sections_unfolded = [ "Extra Spacing", "Font", "Resource", "Settings" ]
+
+[node name="ChapterSelect" type="Node"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Visibility" ]
+next_scene = "res://scenes/StoryScene.tscn"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="0"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/ChapterAnimLeft = SubResource( 1 )
+anims/ChapterAnimRight = SubResource( 2 )
+blend_times = [  ]
+_sections_unfolded = [ "Playback Options" ]
+
+[node name="Background" type="ColorRect" parent="." index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 2.0
+margin_top = -5.0
+margin_right = 750.0
+margin_bottom = 1332.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0.458824, 0.576471, 0.564706, 1 )
+_sections_unfolded = [ "Grow Direction", "Material", "Rect", "Size Flags" ]
+
+[node name="SelectChapter" type="Sprite" parent="Background" index="0"]
+
+position = Vector2( 372.621, 93.1552 )
+texture = ExtResource( 2 )
+
+[node name="RightArrow" type="TouchScreenButton" parent="Background" index="1"]
+
+visible = false
+position = Vector2( 602.272, 801.866 )
+normal = ExtResource( 3 )
+pressed = ExtResource( 3 )
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="LeftArrow" type="TouchScreenButton" parent="Background" index="2"]
+
+visible = false
+position = Vector2( -7.72803, 799.77 )
+normal = ExtResource( 4 )
+pressed = ExtResource( 4 )
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Chapter1" type="Node2D" parent="." index="2"]
+
+position = Vector2( -800, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Chapter1Image" type="TouchScreenButton" parent="Chapter1" index="0"]
+
+position = Vector2( -2.67761, 188.477 )
+scale = Vector2( 1.88976, 1.46493 )
+normal = ExtResource( 5 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+_sections_unfolded = [ "Transform" ]
+
+[node name="ChapterOverlay" type="Sprite" parent="Chapter1" index="1"]
+
+position = Vector2( 364.69, 849.79 )
+scale = Vector2( 1.27927, 1.01685 )
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Grow Direction", "Material", "Theme", "Visibility" ]
+
+[node name="Chapter1Label" type="Label" parent="Chapter1" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 218.0
+margin_top = 806.0
+margin_right = 513.0
+margin_bottom = 899.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.501961, 0.796078, 0.768627, 1 )
+text = "CHAPTER 2"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Visibility", "custom_colors", "custom_fonts" ]
+
+[node name="Chapter2" type="Node2D" parent="." index="3"]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="Chapter2Image" type="TouchScreenButton" parent="Chapter2" index="0"]
+
+position = Vector2( -2.67755, 188.477 )
+scale = Vector2( 1.88976, 1.46493 )
+normal = ExtResource( 5 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+_sections_unfolded = [ "Transform" ]
+
+[node name="ChapterOverlay" type="Sprite" parent="Chapter2" index="1"]
+
+position = Vector2( 364.69, 849.79 )
+scale = Vector2( 1.27927, 1.01685 )
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Grow Direction", "Material", "Theme", "Visibility" ]
+
+[node name="Chapter2Label" type="Label" parent="Chapter2" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 218.0
+margin_top = 806.0
+margin_right = 513.0
+margin_bottom = 899.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.501961, 0.796078, 0.768627, 1 )
+text = "CHAPTER 2"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Visibility", "custom_colors", "custom_fonts" ]
+
+[node name="Chapter3" type="Node2D" parent="." index="4"]
+
+position = Vector2( 800, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Chapter3Image" type="TouchScreenButton" parent="Chapter3" index="0"]
+
+position = Vector2( -2.67755, 188.477 )
+scale = Vector2( 1.88976, 1.46493 )
+normal = ExtResource( 5 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+_sections_unfolded = [ "Transform" ]
+
+[node name="ChapterOverlay" type="Sprite" parent="Chapter3" index="1"]
+
+position = Vector2( 364.69, 849.79 )
+scale = Vector2( 1.27927, 1.01685 )
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Grow Direction", "Material", "Theme", "Visibility" ]
+
+[node name="Chapter3Label" type="Label" parent="Chapter3" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 218.0
+margin_top = 806.0
+margin_right = 513.0
+margin_bottom = 899.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.501961, 0.796078, 0.768627, 1 )
+text = "CHAPTER 2"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Visibility", "custom_colors", "custom_fonts" ]
+
+[node name="Line" type="Sprite" parent="." index="5"]
+
+position = Vector2( 376.965, 931 )
+scale = Vector2( 0.991686, 4.47113 )
+texture = ExtResource( 7 )
+
+[node name="ChapterName" type="Label" parent="." index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 3.0
+margin_top = 943.0
+margin_right = 750.0
+margin_bottom = 1036.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Header"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Grow Direction", "Hint", "Margin", "Mouse", "Rect", "Size Flags", "Theme", "Visibility", "custom_colors", "custom_fonts", "custom_styles" ]
+
+[node name="ChapterText" type="RichTextLabel" parent="." index="7"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 21.0
+margin_top = 1051.0
+margin_right = 744.0
+margin_bottom = 1250.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "Lorem ipsum sit amet Lorem ipsum sit amet Lorem ipsum sit amet Lorem ipsum sit amet Lorem ipsum sit amet Lorem ipsum sit amet "
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "Anchor", "BBCode", "Focus", "Grow Direction", "Hint", "Margin", "Mouse", "Rect", "Size Flags", "Theme", "Visibility", "custom_colors", "custom_fonts" ]
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+
+[connection signal="pressed" from="Background/RightArrow" to="." method="_on_RightArrow_pressed"]
+
+[connection signal="pressed" from="Background/LeftArrow" to="." method="_on_LeftArrow_pressed"]
+
+[connection signal="released" from="Chapter1/Chapter1Image" to="." method="_on_ChapterImage_released"]
+
+[connection signal="released" from="Chapter2/Chapter2Image" to="." method="_on_ChapterImage_released"]
+
+[connection signal="released" from="Chapter3/Chapter3Image" to="." method="_on_ChapterImage_released"]
+
+

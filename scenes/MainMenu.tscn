@@ -1,0 +1,303 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://assets/scripts/MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://assets/images/background/menu_background.png" type="Texture" id=2]
+[ext_resource path="res://assets/images/buttons/menubutton.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFontData" id=1]
+
+hinting = 2
+font_path = "res://assets/fonts/Tillana-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+
+size = 40
+use_mipmaps = false
+use_filter = false
+font_data = SubResource( 1 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFontData" id=3]
+
+hinting = 2
+font_path = "res://assets/fonts/Rationale-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=4]
+
+size = 80
+use_mipmaps = false
+use_filter = false
+font_data = SubResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="StreamTexture" id=5]
+
+flags = 4
+load_path = "res://.import/menubutton.png-00e23f2e11d04dbc9423918c9d8563d9.stex"
+
+[sub_resource type="StreamTexture" id=6]
+
+flags = 4
+load_path = "res://.import/menubutton.png-00e23f2e11d04dbc9423918c9d8563d9.stex"
+
+[sub_resource type="DynamicFont" id=7]
+
+size = 56
+use_mipmaps = false
+use_filter = false
+font_data = SubResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="StreamTexture" id=8]
+
+flags = 4
+load_path = "res://.import/menubutton.png-00e23f2e11d04dbc9423918c9d8563d9.stex"
+
+[sub_resource type="DynamicFont" id=9]
+
+size = 80
+use_mipmaps = false
+use_filter = false
+font_data = SubResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[node name="MainMenu" type="Control" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 1 )
+next_scene_path = "res://scenes/ChapterSelect.tscn"
+
+[node name="Background" type="Sprite" parent="." index="0"]
+
+position = Vector2( 375.088, 667.806 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Offset", "Rect", "Region", "Transform" ]
+
+[node name="LeaderText" type="RichTextLabel" parent="Background" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -325.0
+margin_top = -381.0
+margin_right = 323.0
+margin_bottom = -207.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "Lorem ipsum sit ağşiüömet lorem ipsum asdasd"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "Anchor", "BBCode", "Focus", "Grow Direction", "Hint", "Material", "Mouse", "Rect", "Size Flags", "Theme", "Visibility", "custom_colors", "custom_constants", "custom_fonts", "custom_styles" ]
+
+[node name="PlayButton" type="TouchScreenButton" parent="Background" index="1"]
+
+position = Vector2( -238.044, -232.736 )
+scale = Vector2( 1.63461, 1.59668 )
+normal = ExtResource( 3 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[node name="Label" type="Label" parent="Background/PlayButton" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 78.0
+margin_top = 5.0
+margin_right = 217.0
+margin_bottom = 98.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 4 )
+text = "PLAY"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Grow Direction", "Hint", "Rect", "custom_constants", "custom_fonts" ]
+
+[node name="ResumeButton" type="TouchScreenButton" parent="Background" index="2"]
+
+visible = false
+position = Vector2( -238.044, -232.736 )
+scale = Vector2( 1.63461, 1.59668 )
+normal = ExtResource( 3 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[node name="Label" type="Label" parent="Background/ResumeButton" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 43.0
+margin_top = 8.0
+margin_right = 264.0
+margin_bottom = 101.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 4 )
+text = "RESUME"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Grow Direction", "Hint", "Rect", "custom_constants", "custom_fonts" ]
+
+[node name="SettingsButton" type="TouchScreenButton" parent="Background" index="3"]
+
+position = Vector2( -146.25, -50.0734 )
+normal = SubResource( 5 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[node name="Label2" type="Label" parent="Background/SettingsButton" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 21.0
+margin_top = 6.0
+margin_right = 282.0
+margin_bottom = 99.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 4 )
+text = "SETTINGS"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Grow Direction", "Hint", "Rect", "custom_constants", "custom_fonts" ]
+
+[node name="LeaderboardButton" type="TouchScreenButton" parent="Background" index="4"]
+
+position = Vector2( -145.583, 65.8495 )
+normal = SubResource( 6 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[node name="Label3" type="Label" parent="Background/LeaderboardButton" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 11.0
+margin_top = 20.0
+margin_right = 290.0
+margin_bottom = 85.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 7 )
+text = "LEADERBOARD"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Grow Direction", "Hint", "Rect", "custom_constants", "custom_fonts" ]
+
+[node name="CreditsButton" type="TouchScreenButton" parent="Background" index="5"]
+
+position = Vector2( -145.101, 180.704 )
+normal = SubResource( 8 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[node name="Label4" type="Label" parent="Background/CreditsButton" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 43.0
+margin_top = 7.0
+margin_right = 264.0
+margin_bottom = 100.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 9 )
+text = "CREDITS"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Grow Direction", "Hint", "Rect", "custom_constants", "custom_fonts" ]
+
+[connection signal="released" from="Background/PlayButton" to="." method="_on_PlayButton_released"]
+
+

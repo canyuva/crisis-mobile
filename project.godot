@@ -1,0 +1,41 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=3
+
+[application]
+
+config/name="crisis-mobile"
+run/main_scene="res://scenes/Main.tscn"
+config/icon="res://icon.png"
+config/quit_on_go_back=false
+
+[autoload]
+
+global="*res://assets/scripts/Global.gd"
+state="*res://assets/scripts/State.gd"
+
+[display]
+
+window/size/width=750
+window/size/height=1334
+window/size/resizable=false
+window/size/test_width=375
+window/size/test_height=667
+window/handheld/orientation="portrait"
+window/handheld/emulate_touchscreen=true
+window/handheld/emulate_mouse_from_touch=false
+window/stretch/mode="2d"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "godot-git-control.funabab" )
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

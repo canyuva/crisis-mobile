@@ -1,0 +1,754 @@
+[
+    {
+        "Name":"Gunazia Ekonomik Krizi",
+        "Description":"Gunazia'da senden önceki yönetimin hataları yüzünden büyük bir kargaşa çıkmış ve eski yönetim istifa edip bütün yükü sana yıkmıştır.",
+        "Image":"res://assets/images/chapter_images/chap1img.png",
+        "Partitions":[
+            {
+                "Image":"res://assets/images/part_images/parttemp.png",
+                "Description": "Başlangıç açıklaması...",
+                "Buildings":[
+                    {
+                        "Name":"Adliye",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Adliyeyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Meclis",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Yönetimsel sikimsokumlar",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name":"Sanayi",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Sanayiyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Medya",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Medyatik sikimsokumlar",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name":"Ekonomi Bakanlığı",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Ekonomiyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Bok Opsiyon",
+                                "Effect" : 35
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : -20
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Image":"res://assets/images/part_images/parttemp.png",
+                "Description": "Başlangıç açıklaması...",
+                "Buildings":[
+                    {
+                        "Name":"Adliye",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Adliyeyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Meclis",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Yönetimsel sikimsokumlar",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name":"Sanayi",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Sanayiyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Medya",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Medyatik sikimsokumlar",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name":"Ekonomi Bakanlığı",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Ekonomiyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Image":"res://assets/images/part_images/parttemp.png",
+                "Description": "Başlangıç açıklaması...",
+                "Buildings":[
+                    {
+                        "Name":"Adliye",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Adliyeyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Meclis",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Yönetimsel sikimsokumlar",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name":"Sanayi",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Sanayiyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Medya",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Medyatik sikimsokumlar",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name":"Ekonomi Bakanlığı",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Ekonomiyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : 90
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : -90
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "Name":"Venezuela Ekonomik Krizi",
+        "Description":"Venezuela'da senden önceki yönetimin hataları yüzünden büyük bir kargaşa çıkmış ve eski yönetim istifa edip bütün yükü sana yıkmıştır.",
+        "Image":"res://assets/images/chapter_images/chap2img.png",
+        "Partitions":[
+            {
+                "Image":"res://assets/images/part_images/parttemp.png",
+                "Description": "Başlangıç açıklaması...",
+                "Buildings":[
+                    {
+                        "Name":"Adliye",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Adliyeyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Meclis",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Yönetimsel sikimsokumlar",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name":"Sanayi",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Sanayiyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Medya",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Medyatik sikimsokumlar",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name":"Ekonomi Bakanlığı",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Ekonomiyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Image":"res://assets/images/part_images/parttemp.png",
+                "Description": "Başlangıç açıklaması...",
+                "Buildings":[
+                    {
+                        "Name":"Adliye",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Adliyeyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Meclis",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Yönetimsel sikimsokumlar",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name":"Sanayi",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Sanayiyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Medya",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Medyatik sikimsokumlar",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name":"Ekonomi Bakanlığı",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Ekonomiyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Image":"res://assets/images/part_images/parttemp.png",
+                "Description": "Başlangıç açıklaması...",
+                "Buildings":[
+                    {
+                        "Name":"Adliye",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Adliyeyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Meclis",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Yönetimsel sikimsokumlar",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name":"Sanayi",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Sanayiyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Medya",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Medyatik sikimsokumlar",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name":"Ekonomi Bakanlığı",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Ekonomiyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "Name":"Kore Ekonomik Krizi",
+        "Description":"Kore'de senden önceki yönetimin hataları yüzünden büyük bir kargaşa çıkmış ve eski yönetim istifa edip bütün yükü sana yıkmıştır.",
+        "Image":"res://assets/images/chapter_images/chap3img.png",
+        "Partitions":[
+            {
+                "Image":"res://assets/images/part_images/parttemp.png",
+                "Description": "Başlangıç açıklaması...",
+                "Buildings":[
+                    {
+                        "Name":"Adliye",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Adliyeyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Meclis",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Yönetimsel sikimsokumlar",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name":"Sanayi",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Sanayiyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Medya",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Medyatik sikimsokumlar",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name":"Ekonomi Bakanlığı",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Ekonomiyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Image":"res://assets/images/part_images/parttemp.png",
+                "Description": "Başlangıç açıklaması...",
+                "Buildings":[
+                    {
+                        "Name":"Adliye",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Adliyeyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Meclis",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Yönetimsel sikimsokumlar",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name":"Sanayi",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Sanayiyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Medya",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Medyatik sikimsokumlar",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name":"Ekonomi Bakanlığı",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Ekonomiyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Image":"res://assets/images/part_images/parttemp.png",
+                "Description": "Başlangıç açıklaması...",
+                "Buildings":[
+                    {
+                        "Name":"Adliye",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Adliyeyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Meclis",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Yönetimsel sikimsokumlar",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name":"Sanayi",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Sanayiyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Medya",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Medyatik sikimsokumlar",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name":"Ekonomi Bakanlığı",
+                        "Image": "res://assets/images/buildings/scene_images/City-Courthouse-icon.png",
+                        "Message": "Ekonomiyle alakalı olan olaylar var",
+                        "Options":[
+                            {
+                                "Text" : "Kötü Opsiyon",
+                                "Effect" : -1
+                            },
+                            {
+                                "Text" : "İyi Opsiyon",
+                                "Effect" : 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
